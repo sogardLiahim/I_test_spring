@@ -12,12 +12,17 @@ public class Produs
 	
 	public static List<ProdusClient> produseClient = new ArrayList<ProdusClient>();
 	
+	
 	public Produs(int cantitate, String numeProdus, double pret) {
 		this.cantitate = cantitate;
 		this.numeProdus = numeProdus;
 		this.pret = pret;
 	}
 	
+	
+	public static void populateList() {
+		produseClient.add(new ProdusClient("sampon shoulder shoulder","23","23","44","32","ffw"));
+	}
 	
 	public int getCantitate() {
 		return cantitate;

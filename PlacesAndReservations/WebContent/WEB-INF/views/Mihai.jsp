@@ -7,11 +7,27 @@
 <title>Insert title here</title>
 <link rel="stylesheet" 
 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-
+<link rel="stylesheet"  
+href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js
+"></script> 
 
+
+
+<!-- 
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ -->
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+ 
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -97,8 +113,33 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </div>
 
 
+Calendar test: <p>Date: <input type="text" id="datepicker"></p>
+
+
+
+testing calendar 2:
+<div class="row">
+    <div class="col-md-12">
+         <h6>datetimepicker1</h6>
+
+        <div class="form-group">
+            <div class="input-group date" id="datetimepicker1">
+                <input type="text" class="form-control" />	<span class="input-group-addon"><span class="glyphicon-calendar glyphicon"></span></span>
+            </div>
+        </div>
+         <h6>datetimepicker2</h6>
+
+        <input type="text" class="form-control" id="datetimepicker2" />
+    </div>
+</div>
 </body>
 <script>
+$( function() {
+
+	$('#datetimepicker1').datetimepicker({format : "DD/MM/YYYY hh:mm"});
+	$('#datetimepicker2').datetimepicker({format : "DD/MM/YYYY hh:mm"});
+  } );
+
 var value1;
 
 function sendToDB() 
